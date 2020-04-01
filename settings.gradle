@@ -1,3 +1,4 @@
 rootProject.name='CustomViewDemo'
 include ':app'
 include ':canvasbasedemo'
+include ':animation'

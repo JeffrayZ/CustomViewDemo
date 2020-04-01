@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        tools:context=".MainActivity">
+        <com.example.animation.MyView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/myView"/>
+        <com.example.animation.SportsView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="16dp"
+            android:id="@+id/sportsView"/>
+
+        <com.example.animation.ArgbEvaluatorView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="16dp"
+            android:id="@+id/animationView"/>
+
+        <com.example.animation.ObjectValueView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_margin="16dp"
+            android:id="@+id/objectValueView"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:id="@+id/imageview1"
+            android:adjustViewBounds="true"
+            android:src="@drawable/coco2dxcplus"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:id="@+id/imageview2"
+            android:adjustViewBounds="true"
+            android:src="@drawable/coco2dxcplus"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:id="@+id/imageview3"
+            android:adjustViewBounds="true"
+            android:src="@drawable/coco2dxcplus"/>
+
+        <com.example.animation.SportsView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="16dp"
+            android:id="@+id/sportsView1"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
