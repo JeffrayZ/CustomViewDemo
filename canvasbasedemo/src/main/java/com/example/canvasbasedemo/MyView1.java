@@ -304,14 +304,19 @@ public class MyView1 extends View {
 
         // 分割线================================================================
 
-//        path.moveTo(50,200);
-//        path.lineTo(100,400);
-//        path.lineTo(400,50);
-//        path.lineTo(800,100);
-//        PathEffect pathEffect = new PathDashPathEffect(path, 40, 0,
-//                PathDashPathEffect.Style.TRANSLATE);
-//        paint.setPathEffect(pathEffect);
-//        canvas.drawPath(path, paint);
+        path.moveTo(50,200);
+        path.lineTo(100,400);
+        path.lineTo(400,50);
+        path.lineTo(800,100);
+        Path shape = new Path();
+        shape.moveTo(5, 0);
+        shape.lineTo(0, 10);
+        shape.lineTo(10, 10);
+        shape.close();
+        PathEffect pathEffect = new PathDashPathEffect(shape, 40, 0,
+                PathDashPathEffect.Style.TRANSLATE);
+        paint.setPathEffect(pathEffect);
+        canvas.drawPath(path, paint);
 
         // 分割线================================================================
 
