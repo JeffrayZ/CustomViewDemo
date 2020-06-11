@@ -1,3 +1,5 @@
+include ':animbutton'
+include ':sunanimview'
 rootProject.name='CustomViewDemo'
 include ':app'
 include ':canvasbasedemo'
