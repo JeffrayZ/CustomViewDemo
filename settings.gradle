@@ -1,3 +1,4 @@
+include ':beziercurve'
 include ':snaphelper'
 include ':animbutton'
 include ':sunanimview'
