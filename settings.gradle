@@ -1,3 +1,4 @@
+include ':viewgroupdemo'
 include ':beziercurve'
 include ':snaphelper'
 include ':animbutton'
