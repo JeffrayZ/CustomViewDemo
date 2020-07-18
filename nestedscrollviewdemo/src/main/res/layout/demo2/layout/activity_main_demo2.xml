@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.nestedscrollviewdemo.demo2.MyNestedScrollParent2 xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/demo2_view1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@android:color/holo_blue_light" />
+
+    <View
+        android:id="@+id/demo2_view2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@android:color/holo_red_light" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/demo2_view3"
+                android:layout_width="match_parent"
+                android:layout_height="1000dp"
+                android:background="@android:color/holo_green_light" />
+            <View
+                android:id="@+id/demo2_view4"
+                android:layout_width="match_parent"
+                android:layout_height="1000dp"
+                android:background="@android:color/holo_orange_light" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</com.example.nestedscrollviewdemo.demo2.MyNestedScrollParent2>
