@@ -16,7 +16,10 @@
 <!--        app:layout_constraintLeft_toLeftOf="parent"-->
 <!--        app:layout_constraintRight_toRightOf="parent"-->
 <!--        app:layout_constraintTop_toTopOf="parent" />-->
-    <RelativeLayout
+
+    <!-- ===================================================================================================================================================== -->
+
+    <!--<RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -31,19 +34,39 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-<!--        <TextView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="取消"-->
-<!--            android:layout_alignParentLeft="true"-->
-<!--            android:textSize="40dp"/>-->
-<!--        <TextView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_alignParentRight="true"-->
-<!--            android:textSize="40dp"-->
-<!--            android:text="确定"/>-->
-    </RelativeLayout>
+&lt;!&ndash;        <TextView&ndash;&gt;
+&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;
+&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;
+&lt;!&ndash;            android:text="取消"&ndash;&gt;
+&lt;!&ndash;            android:layout_alignParentLeft="true"&ndash;&gt;
+&lt;!&ndash;            android:textSize="40dp"/>&ndash;&gt;
+&lt;!&ndash;        <TextView&ndash;&gt;
+&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;
+&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;
+&lt;!&ndash;            android:layout_alignParentRight="true"&ndash;&gt;
+&lt;!&ndash;            android:textSize="40dp"&ndash;&gt;
+&lt;!&ndash;            android:text="确定"/>&ndash;&gt;
+    </RelativeLayout>-->
+
+
+
+    <!-- ===================================================================================================================================================== -->
+
+    <com.example.canvasbasedemo.PictureBookView
+        android:layout_width="@dimen/dp_102"
+        android:layout_height="@dimen/dp_126"
+        android:src="@drawable/mainpage_paysuccess_icon"
+        android:scaleType="center"/>
+    <com.example.canvasbasedemo.PictureBookView1
+        android:layout_width="@dimen/dp_102"
+        android:layout_height="@dimen/dp_126"
+        android:layout_marginTop="@dimen/dp_40" />
+    <com.example.canvasbasedemo.PictureBookView2
+        android:layout_width="@dimen/dp_102"
+        android:layout_height="@dimen/dp_126"
+        android:layout_marginTop="@dimen/dp_40" />
+
+<!--    android:src="@drawable/test"-->
 
 
 </LinearLayout>

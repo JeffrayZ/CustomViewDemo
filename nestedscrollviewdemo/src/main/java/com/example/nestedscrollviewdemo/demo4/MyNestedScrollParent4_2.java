@@ -61,10 +61,10 @@ public class MyNestedScrollParent4_2 extends LinearLayout implements NestedScrol
      * 嵌套滑动的子控件在滑动之后，判断父控件是否继续处理（也就是父消耗一定距离后，子再消耗，最后判断父消耗不）
      *
      * @param target       具体嵌套滑动的那个子类
-     * @param dxConsumed   水平方向嵌套滑动的子控件滑动的距离(消耗的距离)
-     * @param dyConsumed   垂直方向嵌套滑动的子控件滑动的距离(消耗的距离)
-     * @param dxUnconsumed 水平方向嵌套滑动的子控件未滑动的距离(未消耗的距离)
-     * @param dyUnconsumed 垂直方向嵌套滑动的子控件未滑动的距离(未消耗的距离)
+     * @param dxConsumed   水平方向嵌套滑动的子控件滑动的距离(target 消耗的距离)
+     * @param dyConsumed   垂直方向嵌套滑动的子控件滑动的距离(target 消耗的距离)
+     * @param dxUnconsumed 水平方向嵌套滑动的子控件未滑动的距离(target 未消耗的距离)
+     * @param dyUnconsumed 垂直方向嵌套滑动的子控件未滑动的距离(target 未消耗的距离)
      */
     @Override
     public void onNestedScroll(@NonNull View target, int dxConsumed, int dyConsumed, int dxUnconsumed, int dyUnconsumed, int type, @NonNull int[] consumed) {
@@ -109,6 +109,7 @@ public class MyNestedScrollParent4_2 extends LinearLayout implements NestedScrol
      */
     @Override
     public boolean onStartNestedScroll(@NonNull View child, @NonNull View target, int axes, int type) {
+        Log.e("onStartNestedScroll",child+":::"+target);
         return (axes & ViewCompat.SCROLL_AXIS_VERTICAL) != 0;
     }
 
