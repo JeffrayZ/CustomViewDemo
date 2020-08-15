@@ -1,3 +1,4 @@
+include ':reminddemo'
 include ':nestedscrollviewdemo'
 include ':viewgroupdemo'
 include ':beziercurve'
